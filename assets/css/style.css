@@ -1,0 +1,326 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #181822;
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.lingkaran {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.lingkaran-luar {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.lingkaran-dalam {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.judul-head {
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    height: auto;
+    float: left;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffe400;
+}
+
+nav {
+    background-color: #201f25;
+    padding: 20px 0;
+}
+.beranda {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffa200;
+    width: 30%;
+    height: 100px;
+    box-sizing: border-box;
+    float: left;
+    text-align: right;
+    padding: 33px 70px;
+}
+.beranda p {
+    padding: 0;
+    margin: 0;
+}
+
+.menus {
+    width: 70%;
+    height: 100px;
+    box-sizing: border-box;
+    float: left;
+    text-align: left;
+    padding: 20px 70px;
+}
+ul.menu {
+    margin: 0;
+    padding: 0;
+}
+ul.menu li {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 12px;
+}
+ul.menu li a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ul.menu li a i, ul.menu li a span {
+    display: block;
+}
+ul.menu li a i {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+main {
+    background-color: #201f25;
+    box-shadow: -1px 0px 0px #4b4b4e;
+    border-bottom: 1px solid #343435;
+    padding-bottom: 22px;
+}
+.container {
+    width: 90%;
+    height: auto;
+    min-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    padding: 20px 0;
+}
+
+aside {
+    width: 100px;
+    height: auto;
+    min-height: 50vh;
+    position: relative;
+    float: left;
+}
+.sidebar-kiri {
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ul.icon-sosmed {
+    margin: 0;
+    padding: 0;
+}
+ul.icon-sosmed li {
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 5px;
+    position: relative;
+}
+ul.icon-sosmed li a {
+    color: white;
+    font-size: 12px;
+}
+ul.icon-sosmed li a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile {
+    width: 250px;
+    height: 300px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 60px;
+}
+.profile .cover {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px #ff511f solid;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    margin: 20px 0;
+}
+.cover .cover-luar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #ff9f00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.cover .cover-dalam {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: #ffe400;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.cover img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #ff511f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.profile .nama-profile {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.nama-profile p:first-child {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff9f00;
+    padding: 0;
+    margin: 10px 0;
+}
+.nama-profile p:last-child {
+    font-size: 12px;
+    color: #ff511f;
+    font-weight: bold;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.content-profile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: white;
+    width: 500px;
+    height: auto;
+    float: left;
+    padding: 20px 0;
+}
+.judul-profile {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.judul-profile i {
+    color: #ff511f;
+    margin-right: 20px;
+}
+.content-profile .detail-profile {
+    width: auto;
+    height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+.detail-profile .detail-profile-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+.detail-profile-icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.detail-profile p {
+    padding: 2px 0;
+    margin: 0 0;
+}
+
+.garis-vertical {
+    height: 50vh;
+    box-shadow: -1px 0px 0px #4b4b4e;
+    border-left: 1px solid #343435;
+    opacity: 0.3;
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #ff9f00;
+    background-color: #201f25;
+    text-align: center;
+}
+footer p {
+    margin: 0;
+    padding: 20px;
+}
+
+.bg-kuning-tua {
+    background-color: #ffe400;
+}
+.bg-kuning-muda {
+    background-color: #fff800;
+}
+.bg-oren-tua {
+    background-color: #ff511f;
+}
+.bg-oren {
+    background-color: #ff7c00;
+}
+.bg-oren-muda {
+    background-color: #ff9f00;
+}
+.bg-hijau-tua {
+    background-color: #00af52;
+}
+.bg-hijau {
+    background-color: #45ba4f;
+}
+.bg-hijau-muda {
+    background-color: #92cb48;
+}
